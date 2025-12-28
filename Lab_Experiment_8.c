@@ -8,9 +8,9 @@ int main() {
     char correctPass[] = "1234";
     // Input from user
     printf("Enter username: ");
-    scanf("%s", username);
+    scanf("%s", &username);
     printf("Enter password: ");
-    scanf("%s", password);
+    scanf("%s", &password);
     // Compare using logical operators only
     int isUserMatch = (strcmp(username, correctUser) == 0);
     int isPassMatch = (strcmp(password, correctPass) == 0);
@@ -20,3 +20,4 @@ int main() {
     printf("%s\n", loginSuccess ? "Login Successful" : "Invalid Login");
     return 0;
 }
+
